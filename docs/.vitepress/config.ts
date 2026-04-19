@@ -25,6 +25,12 @@ export default defineConfig({
 						{ text: 'Contributing', link: '/guide/contributing' },
 					],
 				},
+				{
+					text: 'Development Environment',
+					items: [
+						{ text: 'PX4 SITL Setup', link: '/guide/px4-sitl-setup' },
+					],
+				},
 			],
 		},
 
