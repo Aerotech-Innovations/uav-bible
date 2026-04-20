@@ -26,9 +26,10 @@ export default defineConfig({
 					],
 				},
 				{
-					text: 'Development Environment',
+					text: 'Development',
 					items: [
 						{ text: 'PX4 SITL Setup', link: '/guide/px4-sitl-setup' },
+						{ text: 'PX4 System Architecture', link: '/guide/px4-architecture' },
 					],
 				},
 			],
