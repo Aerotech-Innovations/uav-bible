@@ -30,6 +30,7 @@ export default defineConfig({
 					items: [
 						{ text: 'PX4 SITL Setup', link: '/guide/px4-sitl-setup' },
 						{ text: 'PX4 System Architecture', link: '/guide/px4-architecture' },
+						{ text: 'MAVLink 协议', link: '/guide/mavlink' },
 					],
 				},
 			],
