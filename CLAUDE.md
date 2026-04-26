@@ -42,12 +42,57 @@ fix: correct motor numbering diagram
 docs: update preflight checklist
 ```
 
-## VitePress Markdown extras
+## Document quality review
 
-Custom containers available in all pages:
+Whenever you create or edit a page under `docs/`, check:
+
+1. **Factual accuracy** — verify product specs (sensor resolutions, model numbers, weights, TOPS ratings), regulatory details (regulation numbers, thresholds, dates), and company/country attributions against what you know. Flag anything you cannot confirm.
+2. **Information currency** — note if a regulation, product, or standard cited is likely to have been superseded since your knowledge cutoff (August 2025). Flag it with a `> ⚠️ 需核实是否仍为最新版本` blockquote so editors know to verify.
+3. **Internal consistency** — check that the same fact (e.g. a sensor resolution, a version number) is stated the same way everywhere it appears in the file.
+
+If you find errors, fix them and list each change with the original value → corrected value so the author can verify.
+
+## VitePress formatting toolkit
+
+### Colored containers
+
+Use these to give content visual hierarchy. Pick the container that matches the semantic weight:
+
+| Container | Color | When to use |
+|---|---|---|
+| `::: tip` | Green | Recommendations, best practices, cost summaries |
+| `::: info` | Blue | Key decisions, scope definitions, neutral callouts |
+| `::: warning` | Yellow | Compliance requirements, operational constraints, night/BVLOS ops |
+| `::: danger` | Red | Safety-critical requirements, hard regulatory blocks, supply-chain bans |
+| `::: details` | — | Long tables or reference lists that clutter the page when expanded |
+
+### Inline badges
+
+Use `<Badge>` for priority or status labels inside tables:
 
 ```md
-::: tip / ::: warning / ::: danger
+<Badge type="danger" text="M" />   <!-- Must — red -->
+<Badge type="warning" text="S" />  <!-- Should — yellow -->
+<Badge type="tip" text="N" />      <!-- Nice-to-have — green -->
+<Badge type="info" text="TBD" />   <!-- Neutral label — blue -->
 ```
+
+For risk registers or status tables, prefer Chinese labels so the badge scale doesn't collide with M/S/N:
+
+```md
+<Badge type="danger" text="高" />
+<Badge type="warning" text="中" />
+<Badge type="tip" text="低" />
+```
+
+### General formatting guidance
+
+When writing or editing any page, apply these principles:
+
+- **Wrap key callouts** — don't leave critical constraints or decisions as plain prose. Put them in the appropriate container so they stand out on scan.
+- **Collapse large tables** — BOM lists, full supplier tables, or long reference lists should go inside `::: details` with a one-line summary above.
+- **Highlight numbers that matter** — bold key thresholds, distances, weights, and dates inline (e.g. `**122 m AGL**`, `**45 min**`).
+- **Use tables for comparisons** — any prose that lists 3+ options with trade-offs belongs in a table.
+- **One container per concept** — don't stack multiple `::: danger` blocks back-to-back; consolidate or use a table instead.
 
 Code blocks support line highlighting: ` ```python{2} `.

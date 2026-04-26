@@ -33,6 +33,12 @@ export default defineConfig({
 						{ text: 'MAVLink 协议', link: '/guide/mavlink' },
 					],
 				},
+				{
+					text: 'Design',
+					items: [
+						{ text: 'Firefighting Prototype Requirement', link: '/guide/firefighting-prototype-requirement' },
+					],
+				},
 			],
 		},
 
