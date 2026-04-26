@@ -22,6 +22,7 @@ export default defineConfig({
 					text: 'Introduction',
 					items: [
 						{ text: 'Getting Started', link: '/guide/getting-started' },
+						{ text: 'UAV Basics', link: '/guide/uav-basic' },
 						{ text: 'Contributing', link: '/guide/contributing' },
 					],
 				},
