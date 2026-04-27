@@ -33,4 +33,3 @@ npm run docs:preview
 
 ## Next Steps
 
-- Read the [Contributing Guide](/guide/contributing) to learn how to add pages for your teammates.

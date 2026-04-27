@@ -22,15 +22,21 @@ export default defineConfig({
 					text: 'Introduction',
 					items: [
 						{ text: 'Getting Started', link: '/guide/getting-started' },
-						{ text: 'Contributing', link: '/guide/contributing' },
+						{ text: 'UAV Basics', link: '/guide/uav-basic' },
+						{ text: 'PX4 System Architecture', link: '/guide/px4-architecture' },
+						{ text: 'MAVLink 协议', link: '/guide/mavlink' },
 					],
 				},
 				{
 					text: 'Development',
 					items: [
 						{ text: 'PX4 SITL Setup', link: '/guide/px4-sitl-setup' },
-						{ text: 'PX4 System Architecture', link: '/guide/px4-architecture' },
-						{ text: 'MAVLink 协议', link: '/guide/mavlink' },
+					],
+				},
+				{
+					text: 'Design',
+					items: [
+						{ text: 'Firefighting Prototype Requirement', link: '/guide/firefighting-prototype-requirement' },
 					],
 				},
 				{

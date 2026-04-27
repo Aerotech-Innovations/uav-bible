@@ -34,6 +34,16 @@ The site is deployed to GitHub Pages under `/uav-bible/` — the `base` option i
 
 `tsconfig.json` covers only `.vitepress/**/*.ts` and `.vue` files; path alias `@/*` maps to `docs/.vitepress/*`.
 
+## Pre-push checklist
+
+Before every `git push`, run:
+
+```bash
+npm run docs:build
+```
+
+The build must succeed with no errors (dead links, broken imports, etc.) before pushing. Fix any errors first, then commit the fix and push together.
+
 ## Commit convention
 
 ```
