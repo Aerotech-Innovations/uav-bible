@@ -25,6 +25,7 @@ export default defineConfig({
 						{ text: 'UAV Basics', link: '/guide/uav-basic' },
 						{ text: 'PX4 System Architecture', link: '/guide/px4-architecture' },
 						{ text: 'MAVLink 协议', link: '/guide/mavlink' },
+						{ text: 'PX4 Autopilot Internals', link: '/guide/px4-code-guide' },
 					],
 				},
 				{
