@@ -25,6 +25,8 @@ export default defineConfig({
 						{ text: 'UAV Basics', link: '/guide/uav-basic' },
 						{ text: 'PX4 System Architecture', link: '/guide/px4-architecture' },
 						{ text: 'MAVLink 协议', link: '/guide/mavlink' },
+						{ text: 'Standard 922 法规解读', link: '/guide/standard-922' },
+						{ text: '加拿大空域分类', link: '/guide/canadian-airspace' },
 					],
 				},
 				{
