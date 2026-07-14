@@ -27,6 +27,7 @@ export default defineConfig({
 						{ text: 'MAVLink 协议', link: '/guide/mavlink' },
 						{ text: 'Standard 922 法规解读', link: '/guide/standard-922' },
 						{ text: '加拿大空域分类', link: '/guide/canadian-airspace' },
+						{ text: 'Pre-Validated Declaration 申请指南', link: '/guide/pre-validated-declaration' },
 					],
 				},
 				{
