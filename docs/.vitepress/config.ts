@@ -34,6 +34,7 @@ export default defineConfig({
 					text: 'Procurement',
 					items: [
 						{ text: '国防无人机倡议 (DDI)', link: '/guide/defence-drone-initiative' },
+						{ text: 'MINERVA Initiative 陆军无人系统挑战', link: '/guide/minerva-initiative' },
 					],
 				},
 				{
