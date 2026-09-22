@@ -31,6 +31,12 @@ export default defineConfig({
 					],
 				},
 				{
+					text: 'Procurement',
+					items: [
+						{ text: '国防无人机倡议 (DDI)', link: '/guide/defence-drone-initiative' },
+					],
+				},
+				{
 					text: 'Development',
 					items: [
 						{ text: 'PX4 SITL Setup', link: '/guide/px4-sitl-setup' },
